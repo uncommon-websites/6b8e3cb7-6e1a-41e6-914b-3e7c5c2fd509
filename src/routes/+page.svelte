@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+	title="Bulletproof cyber recovery when AI attacks get smarter"
+	subtitle="Join 50 leading organizations protecting their most valuable data with our zero-trust recovery network that provides blockchain-verified, geo-distributed backups and self-healing recovery."
+	centered={true}
+	customers={[
+		{
+			name: "Michael Chen",
+			position: "IT Director",
+			imageSrc: "/generated/image-a-middle-aged-professional-man-in-a-busi.webp"
+		},
+		{
+			name: "Sarah Martinez",
+			position: "Cybersecurity Lead",
+			imageSrc: "/generated/image-a-professional-woman-in-a-business-setti.webp"
+		},
+		{
+			name: "David Thompson",
+			position: "Chief Technology Officer",
+			imageSrc: "/generated/image-a-senior-executive-man-in-a-sleek-contem.webp"
+		},
+		{
+			name: "Rachel Kim",
+			position: "Security Operations Manager",
+			imageSrc: "/generated/image-a-professional-woman-in-a-corporate-sett.webp"
+		},
+		{
+			name: "James Wilson",
+			position: "Data Protection Specialist",
+			imageSrc: "/generated/image-a-data-manager-man-in-a-vibrant-tech-com.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/stripe.com',
+		'https://logo.clearbit.com/salesforce.com',
+		'https://logo.clearbit.com/atlassian.com',
+		'https://logo.clearbit.com/gitlab.com'
+	]}
+/>
 
 <Summary
 	generating

@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Types
-	import type { PageProps } from "./$types";
+	import type { PageProps } from "./$types.js";
 
 	// Components
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
